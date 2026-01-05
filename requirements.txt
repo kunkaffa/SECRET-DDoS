@@ -1,3 +1,4 @@
-selectors
 asyncio
 aiohttp
+psutil
+selectors
