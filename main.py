@@ -71,7 +71,7 @@ def randomize_cpu_affinity():
         if platform.system() in ['Linux', 'Android']:
             cpu_mask = sum(1 << cpu for cpu in cpu_ids)
             os.system(f'taskset -p {cpu_mask} {current_pid}')
-            print(f"\033[100m \033[97mINFO: \033[0m \033[34m Set CPU affinity mask to: \033[33m {cpu_mask} \033[7mSECRET-Working\033[0m")
+            print(f"\033[100m \033[97mINFO: \033[0m \033[34m Set CPU affinity mask to: \033[33m {cpu_mask} \033[36mSECRET-Working\033[0m")
         elif platform.system() == 'Windows':
             psutil.Process(current_pid).cpu_affinity(cpu_ids)
             print(f"\033[103m \033[97mINFO: \033[0m \033[33m Set CPU affinity to: {cpu_ids} \033[32m SECRET-Working\033[0m")
