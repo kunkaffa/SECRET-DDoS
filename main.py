@@ -30,7 +30,7 @@ os.system("clear")
 print( """
 ╔════════════════════════════════════════════════════════════════╗
 ║                   \033[38;5;141m                                             ║   
-║              --------------,        .---------------           ║              
+║              --------------,        .---------------           ║
 ║                 ---------   \  __  /    ----------             ║
 ║                   -------    \(  )/    --------                ║
 ║                     ------   . \/ -   -------                  ║
@@ -74,7 +74,7 @@ def randomize_cpu_affinity():
             print(f"[INFO] Set CPU affinity mask to: {cpu_mask}")
         elif platform.system() == 'Windows':
             psutil.Process(current_pid).cpu_affinity(cpu_ids)
-            print(f"[INFO] Set CPU affinity to: {cpu_ids}")
+            print(f"\033[100m INFO: \033[0m \033[33m Set CPU affinity to: {cpu_ids}")
         else:
             print(f"[WARNING] CPU affinity setting not supported on this platform: {platform.system()}")
     except psutil.AccessDenied:
