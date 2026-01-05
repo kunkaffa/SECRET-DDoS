@@ -41,7 +41,12 @@ print( """
 ║                         ====UU====UU====                       ║
 ║                             ///|||\\\                           ║
 ║
-
+╚════════════════════════════════════════════════════════════════╝
+""")
+print(f"\033[21m╔{'═' * 64}╗\033[0m")
+print(f"\033[21m║  v.1.0{' ' * 57}║\033[0m")
+print(f"\033[21m║  Author By: KunFayz{' ' * 44}║\033[0m")
+print(f"\033[21m╚{'═'  * 64}╝\033[0m")
 def setup_uvloop():
     """Attempt to set up uvloop if available; otherwise, fallback to asyncio."""
     if platform.system() != 'Windows':
