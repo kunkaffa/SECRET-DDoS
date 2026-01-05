@@ -18,6 +18,14 @@ MAX_UDP_PACKET_SIZE = 65507  # Max size for UDP
 MAX_TCP_PACKET_SIZE = 1024 * 1024  # 1MB for TCP
 MAX_HTTP_PACKET_SIZE = 1024  # 1KB for HTTP(S)
 
+# Clearing the SCREEN
+class colors:
+    BLACK = '\033[30m'
+    RED = '\033[31m'
+    GREEN = '\033[32m'
+    YELLOW = '\033[33m'
+    BLUE = '\033[34m'
+
 
 
 def setup_uvloop():
